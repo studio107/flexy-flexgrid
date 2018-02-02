@@ -2,5 +2,7 @@
 @import "../src/grid";
 
 @include test-module('grid') {
-  // TODO
+  @include test('grid') {
+    @include assert-equal(1, 1);
+  }
 }
